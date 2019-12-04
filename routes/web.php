@@ -12,9 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('coffee');
+    return view('welcome');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/aa/a1', function (){
+   return view('aa.a1');
+});
